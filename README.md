@@ -1,13 +1,56 @@
-Slides and Notebooks for my Probabilistic Machine Learning Course
+Content
 
-There are several excellent resources I heavily relied on to create this course. I would like to thank the authors of these resources for making them available to the public (in no particular order)
 
-1. Piyush Rai (IIT Kanpur) excellent course and slides on the same subject
-2. Philip Hennig (University of Tübingen) excellent course and slides on the same subject
-3. Kevin Murphy (Google) excellent book on the same subject
-4. Ben Lambert has a great book and [Youtube videos](https://www.youtube.com/playlist?list=PLwJRxp3blEvZ8AKMXOy0fc0cqT61GsKCG) on the same subject
-5. Aki Vehtari (Aalto University) excellent course and slides on the same subject
-6. Richard McElreath course on Statistical Rethinking
-7. Allen Downey (Olin College) excellent book on the same subject
-8. Sargur Srihari (University at Buffalo) [excellent course and slides](https://cedar.buffalo.edu/~srihari/CSE574/) on the same subject
-9. Felix Machine Learning and Simulation YouTube [channel](https://www.youtube.com/@MachineLearningSimulation)
+
+1. Refresher Module
+
+   1. Data representation (floating point arithmetic, underflow, overflow)
+   2. Linear Algebra (condition number, matrix decompositions)
+   3. Calculus (univariate calculus, chain rule, partial differentiation)
+   4. Probability (univariate distributions)
+2. Multivariate Calculus and Automatic Differentiation
+
+   1. Gradient, Jacobian, Hessian, and usage in machine learning problems
+   2. Finite difference methods and limitations
+   3. Computational graph view of differentiation 
+   4. Automatic gradient computation (using for example reverse mode auto differentiation)
+3. Continuous Multivariate Probability distributions
+
+   1. Visualization and characterisation of commonly used multivariate continuous probability distributions (such as multivariate normal)
+   2. Maximum likelihood estimation (MLE) and Maximum A Posteriori (MAP) for estimation of distribution parameters
+   3. Change of variables
+   4. Conjugate Priors 
+4. Optimization
+
+   1. Continuous optimization:
+
+      1. Taylor’s series and connections to optimization methods
+      2. Unconstrained Optimization:
+
+         1. First-order optimization:
+
+            1. Gradient descent: step-size, momentum, batching
+         2. Second-order optimization:
+
+            1. Gauss-Newton methods
+            2. Quasi-Newton methods
+      3. Constrained Optimization:
+
+         1. Lagrange multipliers
+         2. Primal and Dual Forms
+         3. KKT conditions
+      4. Linear and Quadratic Programming
+5. Unification of Information Theory and Machine Learning
+
+   1. Information Theoretic concepts: self-information, entropy, KL divergence
+   2. Perfect communication over a noisy imperfect communication channel: encoder, decoder, error correcting codes (and relation to ensemble methods in machine learning)
+   3. Data compression problem: Optimal code, Huffman encoding
+6. Markov chains
+
+   1. Sequential modeling examples: energy, temperature, etc.
+   2. Limitations of modeling sequential data as independent and identically distributed (IID)
+   3. Markov Chain characterisation (prior, transition)
+   4. Joint probability of a sequence and first and Kth order Markov chain. 
+   5. Markov chain representation (finite state machine, adjacency matrix, flat tabular)
+   6. Probability of a sequence given Markov chain parameters
+   7. Learning the parameters (prior and transition matrix) for a Markov chain
